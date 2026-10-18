@@ -1,0 +1,36 @@
+{
+  "name": "Correction",
+  "type": "object",
+  "properties": {
+    "scan_id": {
+      "type": "string",
+      "description": "The scan the correction was made on"
+    },
+    "question": {
+      "type": "number",
+      "description": "Question number (1-based)"
+    },
+    "from_option": {
+      "type": "string",
+      "description": "Option the scanner originally detected"
+    },
+    "to_option": {
+      "type": "string",
+      "description": "The corrected option the user set"
+    },
+    "question_count": {
+      "type": "number",
+      "description": "Question count of that sheet, kept for context"
+    },
+    "options_count": {
+      "type": "number",
+      "description": "Options per question of that sheet, kept for context"
+    }
+  },
+  "required": [
+    "scan_id",
+    "question",
+    "from_option",
+    "to_option"
+  ]
+}
